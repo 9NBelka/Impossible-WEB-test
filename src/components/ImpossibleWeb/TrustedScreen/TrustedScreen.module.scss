@@ -18,20 +18,20 @@
 
 @media (max-width: 1024px) {
   .trustedScreenBlock {
-    padding: 2vw 3vw;
+    padding: 0vw 4vw;
 
     & img {
-      width: 15vw;
+      width: 10vw;
     }
   }
 }
 
 @media (max-width: 576px) {
   .trustedScreenBlock {
-    padding: 3vw 5vw;
+    padding: 0vw 5vw;
 
     & img {
-      width: 25vw;
+      width: 24vw;
     }
   }
 }

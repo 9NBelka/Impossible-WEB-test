@@ -6,7 +6,7 @@
 
 @media (max-width: 1024px) {
   .results {
-    padding: 7vw 0;
+    padding: 6vw 0;
   }
 }
 
@@ -107,27 +107,115 @@
 }
 
 @media (max-width: 1024px) {
-  .header {
-    h2 {
-      font-size: 3.6vw;
+  .headerAndButton {
+    flex-direction: column;
+    align-items: flex-start;
+
+    & .header {
+      .subTitle {
+        font-size: 1.6vw;
+        letter-spacing: 0.3vw;
+      }
+
+      h2 {
+        font-size: 4vw;
+        margin-top: 1vw;
+      }
+
+      p {
+        font-size: 1.8vw;
+        margin-top: 1vw;
+      }
     }
 
-    p {
-      font-size: 1.8vw;
-      margin-top: 0.5vw;
+    & .linkToOurCaseBlock {
+      display: none;
+      margin-top: 1vw;
+      & .linkToOurCase {
+        font-size: 1.8vw;
+        gap: 0.5vw;
+
+        & .iconCase {
+          width: 2.5vw;
+          height: 2.5vw;
+        }
+      }
     }
   }
 }
 
 @media (max-width: 576px) {
-  .header {
-    h2 {
-      font-size: 8vw;
-    }
+  .headerAndButton {
+    .header {
+      .subTitle {
+        font-size: 3vw;
+        letter-spacing: 0.5vw;
+      }
 
-    p {
+      h2 {
+        font-size: 8vw;
+        margin-top: 1.5vw;
+      }
+
+      p {
+        font-size: 3.6vw;
+        margin-top: 1.5vw;
+      }
+    }
+  }
+}
+
+.linkToOurCaseBlockTabletPhone {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .linkToOurCaseBlockTabletPhone {
+    display: flex;
+    justify-content: center;
+    margin-top: 4vw;
+
+    & .linkToOurCase {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      background: linear-gradient(135deg, rgb(255, 37, 67, 1), rgba(255, 37, 67, 1));
+      border: none;
+      padding: 1vw 2.5vw;
+      font-size: 1.8vw;
+      color: var(--color-white);
+      font-family: var(--font-Inter);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--font-lineh-big);
+      border-radius: 0.75vw;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0.2vw 0.75vw rgb(255, 37, 67, 0.35);
+      gap: 0.5vw;
+
+      & .iconCase {
+        width: 2.5vw;
+        height: 2.5vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .linkToOurCaseBlockTabletPhone {
+    margin-top: 8vw;
+
+    & .linkToOurCase {
+      padding: 1.5vw 5vw;
       font-size: 3.6vw;
-      margin-top: 1vw;
+      border-radius: 1vw;
+      gap: 1.5vw;
+
+      & .iconCase {
+        width: 5.5vw;
+        height: 5.5vw;
+      }
     }
   }
 }
@@ -142,15 +230,16 @@
 
 @media (max-width: 1024px) {
   .flexBlock {
-    gap: 3.2vw;
-    margin-top: 5vw;
+    justify-content: center;
+    gap: 2.75vw;
+    margin-top: 3vw;
   }
 }
 
 @media (max-width: 576px) {
   .flexBlock {
-    gap: 7vw;
-    margin-top: 7vw;
+    gap: 5vw;
+    margin-top: 6vw;
   }
 }
 
@@ -214,28 +303,28 @@
 
 @media (max-width: 1024px) {
   .card {
-    width: 48%;
+    width: 48.5%;
     padding: 3vw 3vw;
-    border-radius: 1.5vw;
-    box-shadow: 0 0.2vw 1vw rgba(0, 0, 0, 0.08);
+    border-radius: 1vw;
 
     &::before {
-      height: 0.2vw;
+      height: 0.4vw;
     }
 
-    &:hover {
-      transform: translateY(-0vw);
-      box-shadow: 0 0vw 0vw rgba(0, 0, 0, 0.12);
+    & .statsText {
+      font-size: 3.6vw;
+      margin-top: 5vw;
+      font-weight: var(--font-weight-bold);
     }
 
     & .cartTitle {
       font-size: 2.4vw;
-      margin-top: 2vw;
+      margin-top: 1vw;
     }
 
     & .cartDescription {
       font-size: 1.8vw;
-      margin-top: 2vw;
+      margin-top: 1vw;
     }
   }
 }
@@ -244,21 +333,27 @@
   .card {
     width: 100%;
     padding: 5vw 5vw;
-    border-radius: 3vw;
-    box-shadow: 0 0.2vw 1vw rgba(0, 0, 0, 0.08);
+    border-radius: 2vw;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.3);
 
     &::before {
       height: 1vw;
     }
 
+    & .statsText {
+      font-size: 8vw;
+      margin-top: 10vw;
+      font-weight: var(--font-weight-bold);
+    }
+
     & .cartTitle {
       font-size: 5vw;
-      margin-top: 4vw;
+      margin-top: 2vw;
     }
 
     & .cartDescription {
       font-size: 3.6vw;
-      margin-top: 3vw;
+      margin-top: 2vw;
     }
   }
 }
@@ -286,26 +381,31 @@
 
 @media (max-width: 1024px) {
   .cardIconBlock {
-    width: 6.5vw;
-    height: 6.5vw;
-    border-radius: 1.2vw;
+    gap: 1vw;
 
     & .cardIcon {
-      width: 3vw;
-      height: 3vw;
+      width: 2.25vw;
+      height: 2.25vw;
+    }
+
+    & .subTitleIcon {
+      font-size: 1.65vw;
+      line-height: var(--font-lineh-small);
     }
   }
 }
 
 @media (max-width: 576px) {
   .cardIconBlock {
-    width: 15vw;
-    height: 15vw;
-    border-radius: 3vw;
+    gap: 2vw;
 
     & .cardIcon {
-      width: 5.5vw;
-      height: 5.5vw;
+      width: 4vw;
+      height: 4vw;
+    }
+
+    & .subTitleIcon {
+      font-size: 3.2vw;
     }
   }
 }

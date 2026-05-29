@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import scss from './ProvenResults.module.scss';
 import { BsArrowRightShort, BsGear, BsMenuButtonWide, BsShopWindow } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
@@ -61,6 +62,11 @@ export default function ProvenResults() {
               <p className={scss.cartDescription}>{service.description}</p>
             </div>
           ))}
+        </div>
+        <div className={scss.linkToOurCaseBlockTabletPhone}>
+          <Link to={'/'} className={scss.linkToOurCase}>
+            View all case studies <BsArrowRightShort className={scss.iconCase} />
+          </Link>
         </div>
       </div>
     </section>

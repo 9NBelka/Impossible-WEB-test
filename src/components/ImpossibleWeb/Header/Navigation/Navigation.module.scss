@@ -139,7 +139,7 @@
         font-family: var(--font-Inter);
         font-weight: var(--font-weight-regular);
         line-height: var(--font-lineh-small);
-        border-radius: 1vw;
+        border-radius: 0.75vw;
         cursor: pointer;
         transition: all 0.3s ease;
         box-shadow: 0 0.2vw 0.75vw rgb(255, 37, 67, 0.35);
@@ -190,7 +190,7 @@
       & .ctaButtonPhone {
         padding: 2.6vw 6vw;
         font-size: 3.6vw;
-        border-radius: 1.5vw;
+        border-radius: 1vw;
         margin-top: 2vw;
       }
     }
