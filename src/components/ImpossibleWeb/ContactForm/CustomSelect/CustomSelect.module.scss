@@ -1,0 +1,74 @@
+.selectWrapper {
+  position: relative;
+}
+
+.select {
+  display: flex;
+  width: 100%;
+  padding: 0.5vw 0.5vw;
+  border: 0.05vw solid var(--main-page-color-light-lightGrey);
+  border-radius: 0.35vw;
+  font-size: 0.65vw;
+  color: var(--color-darkGray);
+  font-family: var(--font-Inter);
+  line-height: var(--font-lineh-normal);
+  font-weight: var(--font-weight-regular);
+  transition: all 0.3s ease;
+  margin-top: 0.25vw;
+  cursor: pointer;
+  background: var(--color-white);
+
+  &:focus {
+    outline: none;
+    border-color: var(--main-page-color-lightBlue);
+    box-shadow: 0 0 0 0.05vw rgba(59, 130, 246, 0.1);
+  }
+}
+
+.selectArrow {
+  position: absolute;
+  right: 3%;
+  transition: transform 0.3s ease;
+  font-size: 0.5vw;
+}
+
+.open .selectArrow {
+  transform: rotate(180deg);
+}
+
+.optionsList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 0.25vw;
+  background: var(--color-white);
+  font-size: 0.65vw;
+  color: var(--color-darkGray);
+  font-family: var(--font-Inter);
+  line-height: var(--font-lineh-normal);
+  font-weight: var(--font-weight-regular);
+  border: 0.05vw solid var(--main-page-color-light-lightGrey);
+  border-radius: 0.35vw;
+  box-shadow: 0 0.4vw 1vw rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  max-height: 10vw;
+  overflow-y: auto;
+  padding: 0.25vw 0;
+}
+
+.option {
+  padding: 0.4vw 0.75vw;
+  color: var(--color-darkGray);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background: var(--color-lightGray);
+  }
+}
+
+.selected {
+  background: var(--main-page-b-color-lightGrey);
+  color: white;
+}
