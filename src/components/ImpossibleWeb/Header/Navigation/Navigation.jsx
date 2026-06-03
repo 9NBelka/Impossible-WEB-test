@@ -10,7 +10,7 @@ export default function Navigation({ navRef, isMenuOpen, onHeaderTextLinks, scro
           </a>
         ))}
         <button className={scss.ctaButtonPhone} onClick={() => scrollToSection('services')}>
-          Подати заявку
+          Start Project
         </button>
       </nav>
 
@@ -23,7 +23,7 @@ export default function Navigation({ navRef, isMenuOpen, onHeaderTextLinks, scro
       </a>
 
       <button className={scss.ctaButton} onClick={() => scrollToSection('services')}>
-        Подати заявку
+        Start Project
       </button>
     </div>
   );

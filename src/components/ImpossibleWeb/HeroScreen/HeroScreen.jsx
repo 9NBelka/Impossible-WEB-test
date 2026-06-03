@@ -19,35 +19,33 @@ export default function HeroScreen() {
 
             <h1 className={scss.title}>
               <span className={scss.brand}>impossibleWeb</span>
-              <br /> ваш партнер у веброзробці
+              <br /> is your partner in web development
             </h1>
 
             <p className={scss.subtitle}>
-              Створюємо сайти, запускаємо продажі через Google-рекламу та автоматизуємо
-              бізнес-процеси за допомогою AI. З 2017 року генеруємо прибуток клієнтам онлайн.
+              Premium web development, technical SEO, and workflow automation for modern e-commerce
+              and fast-growing tech brands.
             </p>
 
             <div className={scss.ctaBlock}>
               <button className={scss.ctaButton} onClick={scrollToContact}>
-                Замовити безкоштовний аудит
+                Book Consultation
               </button>
-              {/* <div className={scss.ctaNote}>
-                🚀 Ми проаналізуємо вашу рекламу чи сайт та покажемо точки зростання
-              </div> */}
+              <div className={scss.ctaNote}>View Portfolio</div>
             </div>
 
             <div className={scss.stats}>
               <div className={scss.stat}>
                 <strong>8+</strong>
-                <span>років досвіду</span>
+                <span>years of experience</span>
               </div>
               <div className={scss.stat}>
                 <strong>200+</strong>
-                <span>проєктів</span>
+                <span>projects</span>
               </div>
               <div className={scss.stat}>
-                <strong>150%</strong>
-                <span>середній ріст ROI</span>
+                <strong>98%</strong>
+                <span>Client Retention</span>
               </div>
             </div>
           </div>

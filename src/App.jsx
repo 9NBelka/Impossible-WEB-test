@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 // import MainLandingB from './pages/MainLandingB/MainLandingB';
 import CookieConsent from './components/CookieConsent/CookieConsent';
 import ImpossibleWeb from './pages/ImpossibleWeb/ImpossibleWeb';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 function ScrollToHash() {
   const { hash } = useLocation();
@@ -27,6 +29,9 @@ export default function App() {
       <ScrollToHash />
       <Routes>
         <Route path='/' element={<ImpossibleWeb />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+
+        <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </div>
   );

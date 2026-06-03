@@ -21,11 +21,12 @@ import Services from '../../components/ImpossibleWeb/Services/Services';
 import ProvenResults from '../../components/ImpossibleWeb/ProvenResults/ProvenResults';
 import ContactForm from '../../components/ImpossibleWeb/ContactForm/ContactForm';
 import Footer from '../../components/ImpossibleWeb/Footer/Footer';
+import OurProjects from '../../components/ImpossibleWeb/OurProjects/OurProjects';
 
 export default function ImpossibleWeb() {
   const onFooterAndHeaderTextLinksMain = [
     {
-      title: 'Послуги',
+      title: 'Services',
       linkToPage: 'services',
     },
     // {
@@ -33,7 +34,7 @@ export default function ImpossibleWeb() {
     //   linkToPage: 'benefits',
     // },
     {
-      title: 'Кейси',
+      title: 'Work',
       linkToPage: 'cases',
     },
     // {
@@ -41,7 +42,7 @@ export default function ImpossibleWeb() {
     //   linkToPage: 'process',
     // },
     {
-      title: 'Контакти',
+      title: 'Contact',
       linkToPage: 'contacts',
     },
   ];
@@ -65,6 +66,7 @@ export default function ImpossibleWeb() {
       <TrustedScreen />
       <Services />
       <ProvenResults />
+      <OurProjects />
       <ContactForm />
       <Footer onFooterTextLinks={onFooterAndHeaderTextLinksMain} />
     </div>

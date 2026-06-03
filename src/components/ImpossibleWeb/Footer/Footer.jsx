@@ -28,7 +28,7 @@ export default function Footer({ onFooterTextLinks }) {
 
           <div className={scss.linksAndServicesBlock}>
             <div className={scss.linksSection}>
-              <h4>Навігація</h4>
+              <h4>Navigation</h4>
               <ul>
                 {onFooterTextLinks.map((info, idx) => (
                   <li key={idx}>
@@ -38,7 +38,7 @@ export default function Footer({ onFooterTextLinks }) {
               </ul>
             </div>
             <div className={scss.contactSection}>
-              <h4>Контакти</h4>
+              <h4>Contacts</h4>
               <div className={scss.contactList}>
                 <a href='mailto:mpdart2013@gmail.com' className={scss.contactLink} target='_blank'>
                   <BsEnvelope />
@@ -55,7 +55,7 @@ export default function Footer({ onFooterTextLinks }) {
               </div>
             </div>
             <div className={scss.social}>
-              <h5>Соціальні мережі</h5>
+              <h5>Social networks</h5>
               <div className={scss.socialLinks}>
                 {/* <a href='#' aria-label='Facebook' target='_blank'>
                     <BsFacebook />
@@ -79,13 +79,13 @@ export default function Footer({ onFooterTextLinks }) {
 
         <div className={scss.bottom}>
           <div className={scss.copyright}>
-            <p>&copy; {currentYear} impossibleWEB. Всі права захищені.</p>
+            <p>&copy; {currentYear} impossibleWEB. All rights reserved.</p>
             <p className={scss.tagline}>We Do #impossibleWEB</p>
           </div>
 
           <div className={scss.legal}>
             <a href='/privacy-policy' target='_blank'>
-              Політика конфіденційності
+              Privacy Policy
             </a>
             {/* <a href='#'>Умови використання</a>
             <a href='#'>Договір оферти</a> */}

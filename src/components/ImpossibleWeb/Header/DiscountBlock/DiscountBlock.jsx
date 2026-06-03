@@ -4,14 +4,14 @@ import scss from './DiscountBlock.module.scss';
 export default function DiscountBlock({ right, scrollToSection }) {
   const textsTrusted = {
     texts: [
-      'на перше замовлення знижка -15%',
-      'на перше замовлення знижка -15%',
-      'на перше замовлення знижка -15%',
-      'на перше замовлення знижка -15%',
-      'на перше замовлення знижка -15%',
-      'на перше замовлення знижка -15%',
-      'на перше замовлення знижка -15%',
-      'на перше замовлення знижка -15%',
+      'on first order the discount is -15%',
+      'on first order the discount is -15%',
+      'on first order the discount is -15%',
+      'on first order the discount is -15%',
+      'on first order the discount is -15%',
+      'on first order the discount is -15%',
+      'on first order the discount is -15%',
+      'on first order the discount is -15%',
     ],
   };
 
