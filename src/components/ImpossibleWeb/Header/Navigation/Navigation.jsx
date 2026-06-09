@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import scss from './Navigation.module.scss';
 
 export default function Navigation({ navRef, isMenuOpen, onHeaderTextLinks, scrollToSection }) {
@@ -5,9 +6,9 @@ export default function Navigation({ navRef, isMenuOpen, onHeaderTextLinks, scro
     <div className={scss.phoneAndButtonBlock}>
       <nav ref={navRef} className={`${scss.nav} ${isMenuOpen ? scss.navOpen : ''}`}>
         {onHeaderTextLinks.map((info, idx) => (
-          <a key={idx} href={info.linkToPage}>
+          <Link key={idx} to={info.linkToPage}>
             {info.title}
-          </a>
+          </Link>
         ))}
         <button className={scss.ctaButtonPhone} onClick={() => scrollToSection('contacts')}>
           Start Project
