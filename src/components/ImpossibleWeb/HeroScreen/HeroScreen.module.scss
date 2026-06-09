@@ -191,8 +191,19 @@
 
       & .ctaBlock {
         margin-top: 3vw;
+        gap: 2vw;
 
         & .ctaButton {
+          padding: 1.2vw 4vw;
+          font-size: 1.8vw;
+          border-radius: 1vw;
+
+          &:hover {
+            box-shadow: 0 0.4vw 1.25vw rgba(59, 130, 246, 0);
+          }
+        }
+
+        & .ctaNote {
           padding: 1.2vw 4vw;
           font-size: 1.8vw;
           border-radius: 1vw;
@@ -264,6 +275,7 @@
         align-self: center;
         justify-content: center;
         margin-top: 8vw;
+        gap: 5vw;
 
         & .ctaButton {
           display: flex;
@@ -271,7 +283,14 @@
           padding: 3vw 7vw;
           font-size: 3.6vw;
           border-radius: 3vw;
-          box-shadow: 0 0.75vw 1vw rgb(255, 37, 67, 0.5);
+          box-shadow: 0 0.75vw 1vw rgb(255, 37, 67, 0.35);
+        }
+
+        & .ctaNote {
+          padding: 3vw 7vw;
+          font-size: 3.6vw;
+          border-radius: 3vw;
+          box-shadow: 0 0.75vw 1vw rgba(59, 130, 246, 0.25);
         }
       }
 

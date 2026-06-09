@@ -11,71 +11,7 @@ import { useState, useEffect } from 'react';
 import scss from './OurProjects.module.scss';
 import { BsArrowRightShort, BsArrowLeftShort } from 'react-icons/bs';
 
-export default function OurProjects() {
-  const projects = [
-    {
-      title: 'AZR Pivdennyy',
-      image: '/images/project-azr.png',
-      features: ['Specialist and service websites'],
-    },
-    {
-      title: 'kiev term',
-      image: '/images/project-kievtern.png',
-      features: ['Business card sites'],
-    },
-    {
-      title: 'mechOrbit',
-      image: '/images/project-orbit.png',
-      features: ['Specialist and service websites'],
-    },
-    {
-      title: 'Avtoatmosfera',
-      image: '/images/project-avtosfera.png',
-      features: ['Specialist and service websites'],
-    },
-    {
-      title: 'black tower basement',
-      image: '/images/project-towerbasement.png',
-      features: ['Business card sites'],
-    },
-    {
-      title: 'Kantsedal Artem',
-      image: '/images/project-logitrans.png',
-      features: ['Specialist and service websites'],
-    },
-
-    {
-      title: 'AZR Pivdennyy',
-      image: '/images/project-azr.png',
-      features: ['Specialist and service websites'],
-    },
-    {
-      title: 'kiev term',
-      image: '/images/project-kievtern.png',
-      features: ['Business card sites'],
-    },
-    {
-      title: 'mechOrbit',
-      image: '/images/project-orbit.png',
-      features: ['Specialist and service websites'],
-    },
-    {
-      title: 'Avtoatmosfera',
-      image: '/images/project-avtosfera.png',
-      features: ['Specialist and service websites'],
-    },
-    {
-      title: 'black tower basement',
-      image: '/images/project-towerbasement.png',
-      features: ['Business card sites'],
-    },
-    {
-      title: 'Kantsedal Artem',
-      image: '/images/project-logitrans.png',
-      features: ['Specialist and service websites'],
-    },
-  ];
-
+export default function OurProjects({ projects }) {
   const [isHovered, setIsHovered] = useState(false);
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
@@ -95,7 +31,7 @@ export default function OurProjects() {
   }, [emblaApi, isHovered]);
 
   return (
-    <section className={scss.projects} id='projects'>
+    <section className={scss.projects} id='projectsSection'>
       <div className={scss.container}>
         <div className={scss.headerAndButton}>
           <div className={scss.header}>
@@ -104,7 +40,7 @@ export default function OurProjects() {
             <p>We create turnkey websites and advertising - all in one place</p>
           </div>
           <div className={scss.linkToOurCaseBlock}>
-            <Link to={'/'} className={scss.linkToOurCase}>
+            <Link to={'/projects'} className={scss.linkToOurCase}>
               View all <BsArrowRightShort className={scss.iconCase} />
             </Link>
           </div>
@@ -147,7 +83,7 @@ export default function OurProjects() {
           </div>
         </div>
         <div className={scss.linkToOurCaseBlockTabletPhone}>
-          <Link to={'/'} className={scss.linkToOurCase}>
+          <Link to={'/projects'} className={scss.linkToOurCase}>
             View all <BsArrowRightShort className={scss.iconCase} />
           </Link>
         </div>

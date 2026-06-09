@@ -5,11 +5,11 @@ export default function Navigation({ navRef, isMenuOpen, onHeaderTextLinks, scro
     <div className={scss.phoneAndButtonBlock}>
       <nav ref={navRef} className={`${scss.nav} ${isMenuOpen ? scss.navOpen : ''}`}>
         {onHeaderTextLinks.map((info, idx) => (
-          <a key={idx} onClick={() => scrollToSection(info.linkToPage)}>
+          <a key={idx} href={info.linkToPage}>
             {info.title}
           </a>
         ))}
-        <button className={scss.ctaButtonPhone} onClick={() => scrollToSection('services')}>
+        <button className={scss.ctaButtonPhone} onClick={() => scrollToSection('contacts')}>
           Start Project
         </button>
       </nav>
@@ -22,7 +22,7 @@ export default function Navigation({ navRef, isMenuOpen, onHeaderTextLinks, scro
         +380 (73) 451-69-72
       </a>
 
-      <button className={scss.ctaButton} onClick={() => scrollToSection('services')}>
+      <button className={scss.ctaButton} onClick={() => scrollToSection('contacts')}>
         Start Project
       </button>
     </div>

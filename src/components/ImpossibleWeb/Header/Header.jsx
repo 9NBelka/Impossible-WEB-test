@@ -13,7 +13,7 @@ export default function Header({ onHeaderTextLinks }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 200);
+      setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -51,9 +51,9 @@ export default function Header({ onHeaderTextLinks }) {
     <header className={`${scss.header} ${isScrolled ? scss.scrolled : ''}`}>
       <div className={scss.container}>
         <div className={scss.logo}>
-          <span onClick={() => scrollToSection('hero')}>
+          <a href='/'>
             impossible<strong>WEB</strong>
-          </span>
+          </a>
         </div>
 
         <Navigation
@@ -70,7 +70,7 @@ export default function Header({ onHeaderTextLinks }) {
           {isMenuOpen ? <BsXLg className={scss.menuIcon} /> : <BsList className={scss.menuIcon} />}
         </button>
       </div>
-      <DiscountBlock scrollToSection={scrollToSection} />
+      {/* <DiscountBlock scrollToSection={scrollToSection} /> */}
     </header>
   );
 }

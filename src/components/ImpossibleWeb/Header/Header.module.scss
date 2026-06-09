@@ -8,6 +8,8 @@
   backdrop-filter: blur(0.3vw);
   z-index: 1000;
   transition: all 0.3s ease;
+  border-bottom: 0.1vw solid rgb(15, 28, 53, 0.85);
+  box-shadow: 0 0.01vw 1vw rgba(0, 0, 0, 0.5);
 
   &.scrolled {
     background: rgb(15, 28, 53, 0.85);
@@ -31,7 +33,7 @@
 
 .logo {
   display: flex;
-  span {
+  a {
     cursor: pointer;
     font-size: 1.1vw;
     color: var(--color-white);
@@ -63,7 +65,7 @@
   }
 
   .logo {
-    span {
+    a {
       font-size: 3vw;
     }
   }
@@ -86,7 +88,7 @@
   }
 
   .logo {
-    span {
+    a {
       font-size: 4.5vw;
     }
   }

@@ -23,30 +23,7 @@ import ContactForm from '../../components/ImpossibleWeb/ContactForm/ContactForm'
 import Footer from '../../components/ImpossibleWeb/Footer/Footer';
 import OurProjects from '../../components/ImpossibleWeb/OurProjects/OurProjects';
 
-export default function ImpossibleWeb() {
-  const onFooterAndHeaderTextLinksMain = [
-    {
-      title: 'Services',
-      linkToPage: 'services',
-    },
-    // {
-    //   title: 'Переваги',
-    //   linkToPage: 'benefits',
-    // },
-    {
-      title: 'Work',
-      linkToPage: 'cases',
-    },
-    // {
-    //   title: 'Процес',
-    //   linkToPage: 'process',
-    // },
-    {
-      title: 'Contact',
-      linkToPage: 'contacts',
-    },
-  ];
-
+export default function ImpossibleWeb({ projects, onFooterAndHeaderTextLinksMain }) {
   const location = useLocation();
 
   useEffect(() => {
@@ -66,7 +43,7 @@ export default function ImpossibleWeb() {
       <TrustedScreen />
       <Services />
       <ProvenResults />
-      <OurProjects />
+      <OurProjects projects={projects} />
       <ContactForm />
       <Footer onFooterTextLinks={onFooterAndHeaderTextLinksMain} />
     </div>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import scss from './HeroScreen.module.scss';
 
 export default function HeroScreen() {
@@ -31,7 +32,9 @@ export default function HeroScreen() {
               <button className={scss.ctaButton} onClick={scrollToContact}>
                 Book Consultation
               </button>
-              <div className={scss.ctaNote}>View Portfolio</div>
+              <Link to={'/projects'}>
+                <div className={scss.ctaNote}>View Portfolio</div>
+              </Link>
             </div>
 
             <div className={scss.stats}>
